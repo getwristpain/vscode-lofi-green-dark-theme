@@ -44,12 +44,13 @@
 2. Navigate to the folder:
 
    ```bash
-   cd vscode-lofi-green-dark-theme/packages
+   cd vscode-lofi-green-dark-theme
    ```
 
 3. Install the theme manually using VSCode CLI:
 
    ```bash
+   vsce package
    code --install-extension lofi-green-dark-*.vsix
    ```
 
