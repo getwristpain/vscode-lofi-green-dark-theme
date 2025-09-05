@@ -16,7 +16,9 @@
 
 ## 📸 Preview
 
-> *(Insert screenshots of the theme in action)*
+![Screenshot](screenshots/screenshot-1.png)
+![Screenshot](screenshots/screenshot-2.png)
+![Screenshot](screenshots/screenshot-3.png)
 
 ---
 

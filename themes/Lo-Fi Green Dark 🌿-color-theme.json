@@ -130,6 +130,38 @@
 			}
 		},
 		{
+			"name": "Entity",
+			"scope": [
+				"entity.name.class",
+				"entity.name.type.class",
+				"entity.other.inherited-class",
+				"support.class",
+			],
+			"settings": {
+				"foreground": "#F7D659",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Class Body",
+			"scope": [
+				"meta.class"
+			],
+			"settings": {
+				"foreground": "#bafcba"
+			}
+		},
+		{
+			"name": "Namespace and Constant",
+			"scope": [
+				"entity.name.type.namespace",
+				"constant.other"
+			],
+			"settings": {
+				"foreground": "#F48861",
+			}
+		},
+		{
 			"name": "Control Keywords",
 			"scope": [
 				"keyword.control",
@@ -222,10 +254,12 @@
 				"variable.parameter",
 				"meta.function.parameters",
 				"entity.name.variable.parameter",
-				"keyword.other.type"
+				"keyword.other.type",
+				"keyword.control.default"
 			],
 			"settings": {
-				"foreground": "#f48861"
+				"foreground": "#f48861",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -283,29 +317,6 @@
 			}
 		},
 		{
-			"name": "Class",
-			"scope": [
-				"entity.name.type.class",
-				"support.class",
-				"meta.class"
-			],
-			"settings": {
-				"foreground": "#bafcba"
-			}
-		},
-		{
-			"name": "Entity",
-			"scope": [
-				"entity.name.type.class",
-				"entity.other.inherited-class",
-				"support.class"
-			],
-			"settings": {
-				"foreground": "#F7D659",
-				"fontStyle": "bold"
-			}
-		},
-		{
 			"name": "Interface & Type",
 			"scope": [
 				"entity.name.type.interface",
@@ -345,24 +356,43 @@
 			}
 		},
 		{
+			"name": "Embedded Language",
+			"scope": [
+				"punctuation.definition.tag",
+				"punctuation.section.embedded"
+			],
+			"settings": {
+				"foreground": "#bbbbbb"
+			}
+		},
+		{
+			"name": "PHP Blade - Function",
+			"scope": [
+				"entity.name.function.blade",
+			],
+			"settings": {
+				"foreground": "#30F0FF",
+			}
+		},
+		{
+			"name": "PHP Blade - Keywords",
+			"scope": [
+				"keyword.blade",
+				"support.function.construct.begin.blade",
+				"support.function.construct.end.blade",
+			],
+			"settings": {
+				"foreground": "#BBBBBB",
+			}
+		},
+		{
 			"name": "Attributes (HTML/JSX)",
 			"scope": [
 				"entity.other.attribute-name",
 				"variable.other.attribute",
-				"keyword.blade"
 			],
 			"settings": {
 				"foreground": "#f9c477"
-			}
-		},
-		{
-			"name": "JSON Keys",
-			"scope": [
-				"support.type.property-name.json",
-				"meta.structure.dictionary.key"
-			],
-			"settings": {
-				"foreground": "#a8f6a8"
 			}
 		},
 		{
@@ -377,13 +407,72 @@
 			}
 		},
 		{
-			"name": "Embedded Language",
+			"name": "JSON Keys",
 			"scope": [
-				"punctuation.definition.tag",
-				"punctuation.section.embedded"
+				"support.type.property-name.json",
+				"meta.structure.dictionary.key"
 			],
 			"settings": {
-				"foreground": "#bbbbbb"
+				"foreground": "#a8f6a8"
+			}
+		},
+		{
+			"name": "Markup - Section",
+			"scope": [
+				"entity.name.section"
+			],
+			"settings": {
+				"foreground": "#97F4AD",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markup - Bold",
+			"scope": [
+				"markup.bold",
+			],
+			"settings": {
+				"foreground": "#F7D659",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markup - Italic",
+			"scope": [
+				"markup.italic",
+			],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Markup - Link",
+			"scope": [
+				"string.other.link",
+				"meta.link.inline",
+				"markup.underline.link"
+			],
+			"settings": {
+				"foreground": "#30F0FF",
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "Markup - Code Block",
+			"scope": [
+				"fenced_code.block"
+			],
+			"settings": {
+				"foreground": "#F48861"
+			}
+		},
+		{
+			"name": "Script",
+			"scope": [
+				"meta.embedded.block.shellscript"
+			],
+			"settings": {
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -391,12 +480,13 @@
 			"scope": [
 				"invalid",
 				"invalid.illegal",
-				"invalid.deprecated"
+				"invalid.illegal.character-not-allowed-here",
+				"invalid.deprecated",
 			],
 			"settings": {
 				"foreground": "#ff4477",
 				"fontStyle": "underline"
 			}
-		}
+		},
 	]
 }
